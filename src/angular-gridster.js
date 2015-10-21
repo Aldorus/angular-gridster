@@ -1341,7 +1341,10 @@
                         maxTop = 9999,
                         minLeft = 0,
                         realdocument = $document[0];
-
+					if(scope.$parent.$parent.minLeft) {
+						minLeft = scope.$parent.$parent.minLeft,
+					}
+					
                     var originalCol, originalRow;
                     var inputTags = ['select', 'input', 'textarea', 'button'];
 

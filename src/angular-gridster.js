@@ -1341,8 +1341,8 @@
                         maxTop = 9999,
                         minLeft = 0,
                         realdocument = $document[0];
-					if(scope.$parent.$parent.minLeft) {
-						minLeft = scope.$parent.$parent.minLeft,
+					if (scope.$parent.$parent.gridster.minLeft) {
+						minLeft = scope.$parent.$parent.gridster.minLeft;
 					}
 					
                     var originalCol, originalRow;
